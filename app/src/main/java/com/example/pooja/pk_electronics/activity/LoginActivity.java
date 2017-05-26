@@ -40,7 +40,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 new LoginToServer().execute();
 
-
             }
         });
     }
