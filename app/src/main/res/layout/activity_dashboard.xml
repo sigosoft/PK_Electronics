@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:background="@drawable/pkbg"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.pooja.pk_electronics.activity.DashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorActionbar"
+        >
+
+        <EditText
+            android:id="@+id/searchED"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="132dp"
+            android:hint="Search here.."
+
+android:visibility="gone"
+            />
+
+        <ImageButton
+            android:id="@+id/sync"
+
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sync" />
+
+        <ImageView
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/search"
+android:layout_marginTop="2dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/search"
+            android:layout_alignTop="@+id/sync"
+            android:layout_toLeftOf="@+id/sync"
+            android:layout_toStartOf="@+id/sync" />
+
+        <ImageView android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/pkico"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/imageView2" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp" />
+</RelativeLayout>

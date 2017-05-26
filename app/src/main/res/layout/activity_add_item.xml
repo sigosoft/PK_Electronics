@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pkbg"
+    tools:context="com.example.pooja.pk_electronics.activity.AddItemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorActionbar">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:onClick="backClick2"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="PK Electronics"
+            android:textColor="@color/colorGreen"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Product name"
+        android:inputType="textPersonName"
+
+        android:textColor="@color/colorGreen"
+        android:textColorHint="@color/colorGreen" />
+
+    <EditText
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product"
+        android:layout_alignStart="@+id/product"
+
+        android:layout_below="@+id/product"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Price1"
+        android:inputType="number"
+        android:textColor="@color/colorGreen"
+
+        android:textColorHint="@color/colorGreen" />
+
+    <EditText
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/price1"
+        android:layout_alignStart="@+id/price1"
+        android:layout_below="@+id/price1"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Price2"
+
+        android:inputType="number"
+        android:textColor="@color/colorGreen"
+        android:textColorHint="@color/colorGreen" />
+
+    <EditText
+        android:id="@+id/price3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price2"
+        android:layout_alignStart="@+id/price2"
+        android:layout_below="@+id/price2"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Price3"
+        android:inputType="number"
+        android:textColor="@color/colorGreen"
+        android:textColorHint="@color/colorGreen" />
+
+    <Button
+        android:id="@+id/submitProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorActionbar"
+        android:text="Submit"
+        android:textColor="@color/colorGreen" />
+</RelativeLayout>
